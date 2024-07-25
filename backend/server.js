@@ -21,7 +21,7 @@ app.post('/generate-report', async (req, res) => {
   try {
     console.log('Initiating OpenAI API call...');
     const completion = await openai.chat.completions.create({
-      model: "gpt-4o",
+      model: "gpt-4o-mini",
       messages: [
         { role: "system", content: "Du bist ein erfahrener orthopädischer Assistent, der präzise und umfassende Berichte erstellt. Deine Aufgabe ist es, die gegebenen Informationen zusammenzufassen und separat auf fehlende wichtige Details in Form einer knappen Liste hinzuweisen." },
         { role: "user", content: `Bitte erstelle drei separate Teile basierend auf folgenden Informationen:
@@ -47,7 +47,8 @@ app.post('/generate-report', async (req, res) => {
           
           2. Stichpunkte-Zusammenfassung:
           Erstelle eine Aufzählung mit den wichtigsten Punkten in dieser Reihenfolge mit den folgenden Überschriften:
-          1. [Anrede] [Nachname Initial]
+          Konsil Orthopädie [OA]/[AA]
+          1. Name: [Anrede] [Nachname Initial]
           2. Alter
           3. NF Anamnese
           4. Notfall Diagnose(n)
@@ -57,8 +58,8 @@ app.post('/generate-report', async (req, res) => {
           8. Aktueller Aufenthaltsort
           9. Procedere
           
-          3. Vorschläge zur Vervollständigung (als knappe Liste):
-          - Bei Frakturen: Falls Neurologie nicht dokumentiert, darauf hinweisen.
+          3. Gib basierend auf den Einträgen Vorschläge zur Vervollständigung (als knappe Liste):
+          - Bei dokumentierten Frakturen: Falls Neurologie nicht dokumentiert, darauf hinweisen.
           - Bei "intakter" Neurologie: Vorschlagen, spezifische relevante Nerven zu überprüfen.
           - Bei fehlenden Medikamentenangaben: An Abfrage von Blutverdünnern erinnern.
           - Bei Diagnosen ohne Klassifikation: Vorschlagen, eine hinzuzufügen.
@@ -88,5 +89,5 @@ console.log(`Attempting to start server on port ${PORT}`);
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
   console.log('OpenAI API Key:', process.env.OPENAI_API_KEY ? 'Set' : 'Not set');
-  console.log('Using OpenAI model: gpt-4o');
+  console.log('Using OpenAI model: gpt-4o-mini');
 });
