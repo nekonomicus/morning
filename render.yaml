@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: briefing-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+  - type: static
+    name: briefing-frontend
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: ./frontend/build
