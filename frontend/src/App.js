@@ -287,6 +287,12 @@ function App() {
           <pre>{suggestions}</pre>
         </div>
       )}
+<footer className="footer">
+  <p>Made by Samuel Schaible. Powered by OpenAI's GPT-4o</p>
+  <p className="legal-statement">
+    This application processes all sensitive data locally on your device. No personal or medical information is shared with external services. This tool is not a medical device and is intended for research purposes only. Users are responsible for ensuring compliance with applicable laws and regulations regarding the handling of sensitive information. The developers make no guarantees regarding the accuracy or completeness of generated reports. Use at your own discretion.
+  </p>
+</footer>
     </div>
   );
 }

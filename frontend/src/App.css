@@ -244,3 +244,16 @@ button:disabled {
 .suggestions h2 {
   color: #856404;
 }
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.legal-statement {
+  font-size: 12px;
+  max-width: 600px;
+  margin: 10px auto;
+  text-align: justify;
+}
