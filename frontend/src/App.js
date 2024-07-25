@@ -276,7 +276,7 @@ function App() {
       )}
       {bulletPoints && (
         <div className="report">
-          <h2>Stichpunkte-Zusammenfassung:</h2>
+          <h2>Konsil:</h2>
           <pre>{bulletPoints}</pre>
           <button onClick={() => copyToClipboard(bulletPoints)}>In die Zwischenablage kopieren</button>
         </div>
