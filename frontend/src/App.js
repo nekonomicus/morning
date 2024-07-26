@@ -153,6 +153,7 @@ function App() {
             value={formData.nfAnamnese}
             onChange={handleChange}
             required
+            placeholder="Motorrad-Selbstunfall mit 40 km/h..."
           />
         </div>
         <div className="form-group">
@@ -163,6 +164,7 @@ function App() {
             value={formData.notfallDiagnosen}
             onChange={handleChange}
             required
+            placeholder="BWK 12 Fraktur AO A3 M0 N1..."
           />
         </div>
         <div className="form-group">
@@ -173,6 +175,7 @@ function App() {
             value={formData.untersuchungsbefunde}
             onChange={handleChange}
             required
+            placeholder="N. axillaris intakt..."
           />
         </div>
         <div className="form-group">
@@ -182,6 +185,7 @@ function App() {
             name="vorgeschichte"
             value={formData.vorgeschichte}
             onChange={handleChange}
+            placeholder="St. n. HTP 2020 extern (OP-Bericht vorliegend)"
           />
         </div>
         <div className="form-group">
@@ -191,6 +195,7 @@ function App() {
             name="nebendiagnosen"
             value={formData.nebendiagnosen}
             onChange={handleChange}
+            placeholder="KHK"
           />
         </div>
         <div className="form-group">
@@ -200,6 +205,7 @@ function App() {
             name="medikamente"
             value={formData.medikamente}
             onChange={handleChange}
+            placeholder="Eliquis 5mg 1/Tag"
           />
         </div>
         <div className="form-group">
@@ -211,6 +217,7 @@ function App() {
             value={formData.aufenthaltsort}
             onChange={handleChange}
             required
+            placeholder="IB Blau"
           />
         </div>
         <div className="form-group">
@@ -221,6 +228,7 @@ function App() {
             value={formData.procedere}
             onChange={handleChange}
             required
+            placeholder="Ad OP als 1er Notfall für dorsale Stabi, Korporektomie im Verlauf"
           />
         </div>
         <div className="form-group">
