@@ -48,15 +48,15 @@ app.post('/generate-report', async (req, res) => {
           2. Konsil:
           Erstelle eine Aufzählung mit den wichtigsten Punkten in dieser Reihenfolge mit den folgenden Überschriften:
           Konsilium Orthopädie [Team] [OA]/[AA]
-          1. Name: [Anrede] [Nachname Initial]
-          2. Alter
-          3. NF Anamnese
-          4. Notfall Diagnose(n)
-          5. Untersuchungsbefunde
-          6. Vorgeschichte
-          7. Nebendiagnosen/Medikamente
-          8. Aktueller Aufenthaltsort
-          9. Procedere
+          Name: [Anrede] [Nachname Initial]
+          Alter
+          NF Anamnese
+          Notfall Diagnose(n)
+          Untersuchungsbefunde
+          Vorgeschichte
+          Nebendiagnosen/Medikamente
+          Aktueller Aufenthaltsort
+          Procedere
           
           3. Gib basierend auf den spezifischen Informationen Vorschläge zur Vervollständigung (als knappe Liste):
           - Bei dokumentierten Frakturen: Falls Neurologie nicht dokumentiert, darauf hinweisen.
